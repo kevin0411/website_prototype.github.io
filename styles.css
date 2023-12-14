@@ -1,0 +1,32 @@
+.logo{
+    width: 400px;
+    left: 50px;
+}
+.button {
+    background-color: white;
+    float: right;
+    margin-right: 10px;
+    border: none;
+    color: darkblue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+.map{
+    position: absolute;
+    bottom: 15px;
+    right: 100px;
+}
+.address{
+    background-color: white;
+    border: none;
+    color: darkblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 100px;
+}
