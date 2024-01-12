@@ -1,65 +1,84 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="styles.css">
-    <head class = "top">
+    <head class>
         <link rel="icon" type="image/x-icon" href="Images/icon.png">
         <title>Equipments</title>
-        <img class = "logo" src = "Images/logo.png" alt = "Wingtone Logo"> </img>
-        <div id = "navigate button">
-            <nav>
-            <a href="./contacts.html" class = "button">CONTACTS</a>
-            <a href="./others.html" class = "button">OTHERS</a>
-            <a href="./company.html" class = "button">COMPANY</a>
-            <a href="./news.html" class = "button">NEWS</a>
-            <a href="./equipments.html" class = "button">EQUIPMENTS</a>
-            <a href="./products.html" class = "button">PRODUCTS</a>
-            <a href="./home.html" class = "button">HOME</a>
-            </nav>
-        </div>
     </head>
     
     <body>
-        <div id = "About Us">
-            <br/><br/>
-            <h1 class = "title">About Us</h1>
-            <p class = "content">
-                Description about company
-            </p>
+        <div>
+            <div class = "top">
+                <img class = "logo" src = "Images/logo.png" alt = "Wingtone Logo"> </img>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="change_language">Language</button>
+                    <div id="myDropdown" class="language-choice">
+                        <a href="./products.html">中文</a>
+                        <a href="./equipments.html">ENGLISH</a>
+                        <a href="./company.html">日本語</a>
+                    </div>
+                </div>
+                <input type="text" placeholder="Search.." class = "searchbar">
+            </div>
+            
+            <div id = "navigate button" class = "button_group">
+                <nav>
+                    <a href="./home.html" class = "button">HOME</a>
+                    <a href="./products.html" class = "button">PRODUCTS</a>
+                    <a href="./equipments.html" class = "button">EQUIPMENTS</a>
+                    <a href="./news.html" class = "button">NEWS</a>
+                    <a href="./company.html" class = "button">COMPANY</a>
+                    <a href="./others.html" class = "button">OTHERS</a>
+                    <a href="./contacts.html" class = "button">CONTACTS</a>
+                </nav>
+            </div>
+            <div id = "Slideshow" class = "slide">
+                <img class="company-pic" src="Images/test.jpg">
+                <img class="company-pic" src="Images/test2.jpg">
+                <img class="company-pic" src="Images/logo.png">
+                <img class="company-pic" src="Images/icon.png">
+                <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="button-right" onclick="plusDivs(+1)">&#10095;</button> 
+                <script src="slide.js"></script>
+            </div>
+
+            <div id = "Video" class = "video">
+                <iframe width="800" height="400" 
+                src="https://www.youtube.com/embed/ljd9ISixsWo?si=aUc5h5GF973Vxod_" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+
+            <div id = "news" class = "news_container">
+                <h1 class = "news_title">News</h1>
+                <a href=".html" class = "news_list">News1 News1 News1 News1 News1</a>
+                <a href=".html" class = "news_list">News2 News2 News2 News2 News2</a>
+                <a href=".html" class = "news_list">News3 News3 News3 News3 News3</a>
+                <a href=".html" class = "news_list">News4 News4 News4 News4 News4</a>
+                <a href=".html" class = "nav_button">Explore Products</a>
+                <a href=".html" class = "nav_button">Contact Us</a>
+            </div>
+            
+
+            <div id = "company info" class = "company-info">
+                <p class = "address">
+                    <strong>WINGTONE INDUSTRIAL Co., LTD</strong><br/>
+                    <strong>Guanmiao Factory:</strong><br/>
+                    No.291, Dongrong St., Guanmiao Dist., Tainan City 718, Taiwan<br/>
+                    <strong>Shanhua Factory:</strong><br/>
+                    No.342, Xiao Xin Ying, Shanhua Dist., Tainan City 741, Taiwan<br/>
+                    <br/>
+                    TEL: +886-6-596-1234<br/>
+                    FAX: +886-6-596-1300<br/>
+                    <br/>
+                    <strong>www.wingtone.com.tw</strong>
+                </p>
+                <iframe class = "map" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.979797562548!2d120.3359676500718!3d22.950971125818374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e72002af0d871%3A0x8091b096a6ee06e4!2sNo.%20291%2C%20Dongrong%20St%2C%20Guanmiao%20District%2C%20Tainan%20City%2C%20Taiwan%20718!5e0!3m2!1sen!2sus!4v1702594863822!5m2!1sen!2sus" 
+                width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
-
-        <div id = "History">
-            <br/><br/>
-            <h1 class = "title">History</h1>
-        </div>
-
-        <div id = "Production Process">
-            <br/><br/>
-            <h1 class = "title">Production Process</h1>
-        </div>
-
-        <div id = "Production Policy">
-            <br/><br/>
-            <h1 class = "title">Production Policy</h1>
-        </div>
-
-        
-
-        <div id = "company info" class = "company-info">
-            <p class = "address">
-                <strong>WINGTONE INDUSTRIAL Co., LTD</strong><br/>
-                Guanmiao Factory:<br/>
-                No.291, Dongrong St., Guanmiao Dist., Tainan City 718, Taiwan<br/>
-                Shanhua Factory:<br/>
-                No.342, Xiao Xin Ying, Shanhua Dist., Tainan City 741, Taiwan<br/>
-                <br/>
-                TEL: +886-6-596-1234<br/>
-                FAX: +886-6-596-1300<br/>
-                <br/>
-                <strong>www.wingtone.com.tw</strong>
-            </p>
-            <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.979797562548!2d120.3359676500718!3d22.950971125818374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e72002af0d871%3A0x8091b096a6ee06e4!2sNo.%20291%2C%20Dongrong%20St%2C%20Guanmiao%20District%2C%20Tainan%20City%2C%20Taiwan%20718!5e0!3m2!1sen!2sus!4v1702594863822!5m2!1sen!2sus" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        </div>
-        
     </body>
 </html>
