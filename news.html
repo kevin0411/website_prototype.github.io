@@ -1,84 +1,139 @@
 <!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="styles.css">
-    <head class>
+<html lang="en" dir="ltr">
+    <head>
+        <title>News | Wingtone</title>
         <link rel="icon" type="image/x-icon" href="Images/icon.png">
-        <title>News</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Wingtone is the leading manufacturer of precision cold forming components in Taiwan, supplying unique hollow components for diverse applications mainly to the automotive industry."/>
+        <meta name=keywords content="Wingtone, Wingtone運通, Wingtone運通首頁, Wingtone Home, Wingtone搜尋, Wingtone Mail, Wingtone信箱, Wingtone Products, 運通產品">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    
     <body>
-        <div>
-            <div class = "top">
-                <img class = "logo" src = "Images/logo.png" alt = "Wingtone Logo"> </img>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="change_language">Language</button>
-                    <div id="myDropdown" class="language-choice">
-                        <a href="./products.html">中文</a>
-                        <a href="./equipments.html">ENGLISH</a>
-                        <a href="./company.html">日本語</a>
-                    </div>
+        <header>
+            <h1>News</h1>
+           <div class="logoWrapper"><img class="logo" src="logo.png" alt="Wingtone CI"/></div>
+            <div class="lang"><form action="">
+                <label for="language"></label>
+                <select id="lang" name="lang">
+                  <option value="Language">Language</option>
+                  <option value="English">English</option>
+                  <option value="Mandarin">中文</option>
+                  <option value="Japan">日本語</option>
+                </select>
+              </form><div class="search">
+                <input name="search" type="text" placeholder="Search">
+              </div>
+              <div class="searchicon"><i class="w3-xlarge fa fa-search"></i></div></div>
+           <nav>
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <ul class="w3-hide-small" id="link">
+                    <li><a href="home.html" title="Home">HOME</a></li>
+                    <li><a href="products.html" title="Products">PRODUCTS</a></li>
+                    <li><a href="equipments.html" title="Equipments">EQUIPMENTS</a></li>
+                    <li><a href="news.html" title="News">NEWS</a></li>
+                    <li><a href="company.html" title="Company">COMPANY</a></li>
+                    <li><a href="others.html" title="Others">OTHERS</a></li>
+                    <li><a href="contact.html" title="Contact">CONTACT</a></li>
+                </ul>
+                <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+                  <a href="#HOME" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+                  <a href="#PRODUCTS" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRODUCTS</a>
+                  <a href="#EQUIPMENTS" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EQUIPMENTS</a>
+                  <a href="#NEWS" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">NEWS</a>
+                  <a href="#COMPANY" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COMPANY</a>
+                  <a href="#OTHERS" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OTHERS</a>
+                  <a href="#CONTACT" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
                 </div>
-                <input type="text" placeholder="Search.." class = "searchbar">
+            </nav>
+        </header>
+        <main>
+            <div class="banner">
+                <div class="w3-display-container">
+                    <img class="mySlides" src="img_snowtops.jpg" style="width:100%">
+                    <img class="mySlides" src="img_lights.jpg" style="width:100%">
+                    <img class="mySlides" src="img_mountains.jpg" style="width:100%">
+                    <img class="mySlides" src="img_forest.jpg" style="width:100%">
+                  
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                  </div>
+                  <script>
+                  var slideIndex = 1;
+                  showDivs(slideIndex);
+                  
+                  function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                  }
+                  
+                  function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                  }
+                  </script>
+                  <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}    
+                      x[myIndex-1].style.display = "block";  
+                      setTimeout(carousel, 5000); // Change image every 5 seconds
+                    }
+                    function myFunction() {
+                    var x = document.getElementById("navDemo");
+                    if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                    } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                    }
+}
+                    </script>
             </div>
+            <div class="video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VkIEfqHFNkU?si=QQyfo8IO7LgEa_0u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="news">
+              <h2 class= w3-xxlarge style="text-shadow:1px 1px 0 #444">News</h2>
+                <ul class= "w3-xlarge w3-ul w3-hoverable">
+                  <li class="w3-border-bottom w3-border-blue"><a href="#" title="">newsnewsnewsnewsnew</a></li>
+                  <li class="w3-border-bottom w3-border-blue"><a href="#" title="">newsnewsnewsnewsnew</a></li>
+                  <li class="w3-border-bottom w3-border-blue"><a href="#" title="">newsnewsnewsnewsnew</a></li>
+                  <li class="w3-border-bottom w3-border-blue"><a href="#" title="">newsnewsnewsnewsnew</a></li>
+                </ul>
+                <button class="w3-button w3-light-blue w3-round-large w3-margin-right">View Products</button>
+                <button class="w3-button w3-light-blue w3-round-large w3-margin-left w3-text-white">Contact Us</button>
+            </div>
+             
+        </main>
+        <footer>
+          <div class="info">
+            <h3 class="FooterCompanyName"><strong>WINGTONE INDUSTRIAL Co., LTD</strong></h3>
+            <p class="factories"><span class="address">Guanmiao Factory:</span><br>
+            No.291, Dongrong St., Guanmiao Dist., Tainan City 718, Taiwan<br>
+            <span class="address">Shanhua Factory:</span><br>
+            No.342, Xiao Xin Ying, Shanhua Dist., Tainan City 741, Taiwan</p>
+            <p class="TelFax">TEL: +886-6-596-1234<br>
+            FAX: +886-6-596-1300</p>
+            <p class="url"><strong>www.wingtone.com.tw</strong></p></div>
+          <div class="location"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.3801535022135!2d120.31614327528196!3d23.119775912693818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7b6773ccbc2b%3A0x2a9e159bdf67e92e!2zVyDpgYvpgJrlt6Xmpa3ogqHku73mnInpmZDlhazlj7gt5ZaE5YyW5bug!5e0!3m2!1sen!2stw!4v1704629387958!5m2!1sen!2stw" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
             
-            <div id = "navigate button" class = "button_group">
-                <nav>
-                    <a href="./home.html" class = "button">HOME</a>
-                    <a href="./products.html" class = "button">PRODUCTS</a>
-                    <a href="./equipments.html" class = "button">EQUIPMENTS</a>
-                    <a href="./news.html" class = "button">NEWS</a>
-                    <a href="./company.html" class = "button">COMPANY</a>
-                    <a href="./others.html" class = "button">OTHERS</a>
-                    <a href="./contacts.html" class = "button">CONTACTS</a>
-                </nav>
-            </div>
-            <div id = "Slideshow" class = "slide">
-                <img class="company-pic" src="Images/test.jpg">
-                <img class="company-pic" src="Images/test2.jpg">
-                <img class="company-pic" src="Images/logo.png">
-                <img class="company-pic" src="Images/icon.png">
-                <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="button-right" onclick="plusDivs(+1)">&#10095;</button> 
-                <script src="slide.js"></script>
-            </div>
-
-            <div id = "Video" class = "video">
-                <iframe width="800" height="400" 
-                src="https://www.youtube.com/embed/ljd9ISixsWo?si=aUc5h5GF973Vxod_" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                </iframe>
-            </div>
-
-            <div id = "news" class = "news_container">
-                <h1 class = "news_title">News</h1>
-                <a href=".html" class = "news_list">News1 News1 News1 News1 News1</a>
-                <a href=".html" class = "news_list">News2 News2 News2 News2 News2</a>
-                <a href=".html" class = "news_list">News3 News3 News3 News3 News3</a>
-                <a href=".html" class = "news_list">News4 News4 News4 News4 News4</a>
-                <a href=".html" class = "nav_button">Explore Products</a>
-                <a href=".html" class = "nav_button">Contact Us</a>
-            </div>
-            
-
-            <div id = "company info" class = "company-info">
-                <p class = "address">
-                    <strong>WINGTONE INDUSTRIAL Co., LTD</strong><br/>
-                    <strong>Guanmiao Factory:</strong><br/>
-                    No.291, Dongrong St., Guanmiao Dist., Tainan City 718, Taiwan<br/>
-                    <strong>Shanhua Factory:</strong><br/>
-                    No.342, Xiao Xin Ying, Shanhua Dist., Tainan City 741, Taiwan<br/>
-                    <br/>
-                    TEL: +886-6-596-1234<br/>
-                    FAX: +886-6-596-1300<br/>
-                    <br/>
-                    <strong>www.wingtone.com.tw</strong>
-                </p>
-                <iframe class = "map" 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.979797562548!2d120.3359676500718!3d22.950971125818374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e72002af0d871%3A0x8091b096a6ee06e4!2sNo.%20291%2C%20Dongrong%20St%2C%20Guanmiao%20District%2C%20Tainan%20City%2C%20Taiwan%20718!5e0!3m2!1sen!2sus!4v1702594863822!5m2!1sen!2sus" 
-                width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
+              
+        </footer>
     </body>
 </html>
