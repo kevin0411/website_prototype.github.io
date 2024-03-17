@@ -1273,6 +1273,7 @@
    {
     float: right;
     padding: 0px 5% 0px 5%;
+    margin-bottom: 20px;
    }
    .EquipmentDescription4
    {
@@ -1300,6 +1301,7 @@
     float: right;
     margin-top: -100px;
     padding: 0px 70px 0px 50px;
+    margin-bottom: 20px;
    }
    }
    
