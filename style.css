@@ -1282,6 +1282,25 @@
     color: #112758;
     font-family: Roboto, sans-serif;
    }
+   .AboutUs
+   {
+    color: #112758;
+    font-family: Roboto, sans-serif;
+    padding: 28px 0px 0px 70px;
+   }
+   .DescriptionAboutCompany
+   {
+    color: #112758;
+    font-family: Roboto, sans-serif;
+    font-size: medium;
+    padding: 5px 0px 0px 70px;
+   }
+   .CompanyImage
+   {
+    float: right;
+    margin-top: -100px;
+    padding: 0px 70px 0px 50px;
+   }
    }
    
    
