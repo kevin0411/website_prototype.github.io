@@ -1255,6 +1255,33 @@
     color: #112758;
     font-family: Roboto, sans-serif;
    }
+   .EquipmentImage3
+   {
+    display: block;
+    max-width: 100;
+    width: auto;
+    float: left;
+    padding: 0px 5% 0px 5%;
+   }
+   .EquipmentDescription3
+   {
+    float: left;
+    color: #112758;
+    font-family: Roboto, sans-serif;
+   }
+   .EquipmentImage4
+   {
+    float: right;
+    padding: 0px 5% 0px 5%;
+   }
+   .EquipmentDescription4
+   {
+    position: relative;
+    right: 50%;
+    top: 1050px; 
+    color: #112758;
+    font-family: Roboto, sans-serif;
+   }
    }
    
    
