@@ -1303,11 +1303,36 @@
     padding: 0px 70px 0px 50px;
     margin-bottom: 20px;
    }
-   .CompanyLine
-    {
-      padding-left: 30px;
-      padding-top: 22%; 
-    }
+   .AboutUsLine
+  {
+    padding-left: 30px;
+    padding-top: 22%; 
+  }
+   .OurHistory
+  {
+    color: #112758;
+    font-family: Roboto, sans-serif;
+    padding: 28px 0px 0px 70px;
+  }
+  .DescriptionOfOurHisotry
+  {
+    color: #112758;
+    font-family: Roboto, sans-serif;
+    font-size: medium;
+    padding: 5px 0px 0px 70px;
+  }
+  .TimlineImage
+  {
+    margin-left: 30%;
+    margin-top: 0%;
+    width: 500px; /* Set the width to your desired size */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .OurHistoryLine
+  {
+    padding-left: 30px;
+    padding-top: -25%; 
+  }
    }
    
    
