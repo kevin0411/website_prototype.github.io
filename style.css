@@ -1228,17 +1228,32 @@
     width: 100%;
     padding: 10px 5% 10px 5%;
    }
-   .images
+   .EquipmentImage1
    {
     display: block;
     max-width: 100;
     width: auto;
     float: left;
-    padding: 10px 5% 10px 5%;
+    padding: 10px 5% 0px 5%;
    }
-   .EquipmentDescription
+   .EquipmentDescription1
    {
-    display: block;
+    float: left;
+    color: #112758;
+    font-family: Roboto, sans-serif;
+   }
+   .EquipmentImage2
+   {
+    float: right;
+    padding: 0px 5% 0px 5%;
+   }
+   .EquipmentDescription2
+   {
+    position: relative;
+    right: 63%;
+    top: 380px; 
+    color: #112758;
+    font-family: Roboto, sans-serif;
    }
    }
    
