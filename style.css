@@ -1327,6 +1327,39 @@
     padding-left: 30px;
     padding-top: -25%; 
   }
+  .ProductionProcess
+  {
+    color: #112758;
+    font-family: Roboto, sans-serif;
+    padding: 5px 0px 0px 70px;
+  }
+  .ProductionProcessLine
+  {
+    padding-left: 30px;
+    padding-top: -25%;
+  }
+  .ProductionPolicy
+  {
+    color: #112758;
+    font-family: Roboto, sans-serif;
+    padding: 5px 0px 0px 70px;
+  }
+  .ProductionPolicyLine
+  {
+    padding-left: 30px;
+    padding-top: -25%;
+  }
+  .PatentsAndCertificates
+  {
+    color: #112758;
+    font-family: Roboto, sans-serif;
+    padding: 5px 0px 0px 70px;
+  }
+  .PatentsAndCertificatesLine
+  {
+    padding-left: 30px;
+    padding-top: -25%;
+  }
    
    
    
