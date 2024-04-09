@@ -1540,8 +1540,8 @@
     background-color: #ffffff;
     color: #112758;
     cursor: pointer;
-    padding: 0px 0px 0px 30px;
-    width: 8%;
+    padding: 0px 0px 0px 75px;
+    width: 10%;
     border: none;
     text-align: left;
     outline: none;
@@ -1553,10 +1553,19 @@
   }
   .content 
   {
-    padding: 0px 0px 0px 60px;
+    padding: 0px 0px 0px 95px;
     display: none;
     overflow: hidden;
     background-color: #ffffff;
+  }
+  .sideNewsLine
+  {
+    width: 12%;
+    padding: 0px 0px 0px 75px;
+  }
+  .sideNews
+  {
+    padding: 30px 0px 0px 75px;
   }
 
    
